@@ -12,42 +12,42 @@ fprintf('============================================================\n\n');
 
 %% INPUT DATA
 
-VLL_kV = input('Line-line voltage in kV [220]: ');
+VLL_kV = input('Line-line voltage in kV : ');
 if isempty(VLL_kV)
     VLL_kV = 220;
 end
 
-f = input('Frequency in Hz [50]: ');
+f = input('Frequency in Hz : ');
 if isempty(f)
     f = 50;
 end
 
-len_km = input('Line length in km [200]: ');
+len_km = input('Line length in km []: ');
 if isempty(len_km)
     len_km = 200;
 end
 
-R_km = input('Series resistance in ohm/km/phase [0.05]: ');
+R_km = input('Series resistance in ohm/km/phase : ');
 if isempty(R_km)
     R_km = 0.05;
 end
 
-L_km_mH = input('Series inductance in mH/km/phase [1]: ');
+L_km_mH = input('Series inductance in mH/km/phase : ');
 if isempty(L_km_mH)
     L_km_mH = 1;
 end
 
-C_km_uF = input('Shunt capacitance in uF/km/phase [0.01]: ');
+C_km_uF = input('Shunt capacitance in uF/km/phase : ');
 if isempty(C_km_uF)
     C_km_uF = 0.01;
 end
 
-P_light_MW = input('Light-load active power in MW [50]: ');
+P_light_MW = input('Light-load active power in MW : ');
 if isempty(P_light_MW)
     P_light_MW = 50;
 end
 
-pf_light = input('Light-load lagging power factor [0.95]: ');
+pf_light = input('Light-load lagging power factor : ');
 if isempty(pf_light)
     pf_light = 0.95;
 end
